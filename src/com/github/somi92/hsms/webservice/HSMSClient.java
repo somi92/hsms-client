@@ -13,8 +13,8 @@ public class HSMSClient {
 		HSMSWebServiceService ws = new HSMSWebServiceService();
 		
 		HSMSServices service = ws.getHSMSWebServicePort();
-		List<Hsms> hsms = service.listActionsByPriority(2);
-//		List<Hsms> hsms = service.listAllActions();
+//		List<Hsms> hsms = service.listActionsByPriority(1);
+		List<Hsms> hsms = service.listAllActions();
 		
 		System.out.printf("%-5s%-70s%-15s%-15s%-50s%-10s","RB","Opis","SMS broj","Cena poruke","Organizacija","Prioritet"+'\n');
 		System.out.println("=====================================================================================================================================================================");
